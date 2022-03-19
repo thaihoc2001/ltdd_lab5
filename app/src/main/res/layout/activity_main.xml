@@ -38,10 +38,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Search food"
         android:background="@drawable/bgplaintext"
+        android:ems="10"
+        android:hint="Search food"
+        android:inputType="textPersonName"
         android:textColor="#858282"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,17 +50,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAll"
         android:layout_width="115dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#F1B000"
+        android:backgroundTint="#F8F8F8"
         android:text="Donut"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnPink"
         android:layout_width="115dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -68,22 +69,22 @@
         android:text="Pink donut"
         android:textColor="#000000"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAll"
+        app:layout_constraintStart_toEndOf="@+id/btnAll"
+        app:layout_constraintTop_toTopOf="@+id/btnAll"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnFloat"
         android:layout_width="115dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:backgroundTint="#F8F8F8"
         android:text="Floating"
         android:textColor="#020202"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPink"
+        app:layout_constraintStart_toEndOf="@+id/btnPink"
+        app:layout_constraintTop_toTopOf="@+id/btnPink"
         app:layout_constraintVertical_bias="0.0" />
 
     <ListView
@@ -94,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btnPink"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
